@@ -9,5 +9,7 @@ spec:
   selector:
     app: sample-app
   ports:
-    - port: 80
-      targetPort: 3000
+    - name: svc-port
+      port: 80
+      targetPort: app-port
+      protocol: TCP

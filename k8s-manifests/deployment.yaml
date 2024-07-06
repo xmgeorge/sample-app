@@ -18,4 +18,5 @@ spec:
         - name: sample-app
           image: georgeulahannan/devopassessment:01
           ports:
-            - containerPort: 3000
+            - name: app-port
+              containerPort: 3000
