@@ -1,0 +1,10 @@
+---
+namespace: staging
+replicas:
+  - name: sample-app-deployment
+    count: 10
+images:
+  - name: georgeulahannan/devopassessment
+    newTag: c1c7c4a3247af02d5962c8e523d705f70915d5ba
+resources:
+  - ../../app-base
